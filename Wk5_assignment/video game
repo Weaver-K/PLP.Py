@@ -1,0 +1,15 @@
+class Character:
+    def __init__(self, name, class_type, level):
+        self.name = name
+        self.class_type = class_type
+        self.level = level
+
+    def level_up(self):
+        self.level += 1
+        print(f"{self.name} leveled up to {self.level}!")
+
+# Create a player
+character_name = input("Enter your character name: ")
+player = Character(character_name, "Warrior", 1)
+print(f"Welcome, {player.name} the {player.class_type}!")
+player.level_up()
